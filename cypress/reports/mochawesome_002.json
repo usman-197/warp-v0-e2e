@@ -1,0 +1,168 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 3,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-02T07:37:36.018Z",
+    "end": "2022-09-02T07:37:49.270Z",
+    "duration": 13252,
+    "testsRegistered": 4,
+    "passPercent": 75,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c2ed164-ab16-45e3-9b41-264ed5e5037a",
+      "title": "",
+      "fullFile": "cypress/e2e/rpcLogs.cy.js",
+      "file": "cypress/e2e/rpcLogs.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c0991bba-17f8-4766-a358-8fad644e3574",
+          "title": "Rpc Logs.",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click on RPC Logs link in header section.",
+              "fullTitle": "Rpc Logs. Click on RPC Logs link in header section.",
+              "timedOut": null,
+              "duration": 6486,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('RPC Logs').should('contain', 'RPC Logs').click();\ncy.wait(2000);",
+              "err": {},
+              "uuid": "843c2c7f-117c-4b1f-97c3-861683a5070a",
+              "parentUUID": "c0991bba-17f8-4766-a358-8fad644e3574",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Download RPC Logs",
+              "fullTitle": "Rpc Logs. Download RPC Logs",
+              "timedOut": null,
+              "duration": 4149,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Download').should('contain', 'Download').click();\ncy.wait(4000);",
+              "err": {},
+              "uuid": "e14b97ac-c6e8-4ddd-bc04-cc44680ea7c9",
+              "parentUUID": "c0991bba-17f8-4766-a358-8fad644e3574",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Click again on RPC Logs link to check COPY functionality.",
+              "fullTitle": "Rpc Logs. Click again on RPC Logs link to check COPY functionality.",
+              "timedOut": null,
+              "duration": 111,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('RPC Logs').should('contain', 'RPC Logs').click();",
+              "err": {},
+              "uuid": "caba3003-5a07-44dc-aaca-cab4c9017146",
+              "parentUUID": "c0991bba-17f8-4766-a358-8fad644e3574",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Copy RPC Logs",
+              "fullTitle": "Rpc Logs. Copy RPC Logs",
+              "timedOut": null,
+              "duration": 896,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.fCQOHB').click();",
+              "err": {
+                "message": "NotAllowedError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Write permission denied.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "NotAllowedError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Write permission denied.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n",
+                "diff": null
+              },
+              "uuid": "d4143c18-ec73-4551-b343-39fe32490270",
+              "parentUUID": "c0991bba-17f8-4766-a358-8fad644e3574",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "843c2c7f-117c-4b1f-97c3-861683a5070a",
+            "e14b97ac-c6e8-4ddd-bc04-cc44680ea7c9",
+            "caba3003-5a07-44dc-aaca-cab4c9017146"
+          ],
+          "failures": [
+            "d4143c18-ec73-4551-b343-39fe32490270"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11642,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
