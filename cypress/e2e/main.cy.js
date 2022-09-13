@@ -181,6 +181,9 @@ describe('All components testcases.', ()=>{
     })
     it('Enter after Attributes selection', ()=>{
         MainObject.enterAttributes();
+        cy.request('https://staging.timegraph.analog.one/result/*').as('apiResponse')
+        cy.get('@apiResponse').its('status')
+        .should('equal', 200);
     })
     //R.E.S.U.L.T.S
     it('Click on Consumable Data tab.', ()=>{
