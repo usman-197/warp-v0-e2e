@@ -138,7 +138,7 @@ export class Main{
     enterAttributes(){
         cy.get(this.enter_attributes_locator)
             .click();
-        cy.wait(7000);
+        // cy.wait(7000);
     }
     //results-component-functions
     consumableDataTab(){
